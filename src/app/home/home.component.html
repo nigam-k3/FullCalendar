@@ -1,0 +1,18 @@
+<div>
+  <form class="logIn" [formGroup]="logInForm" (ngSubmit)="submit()">
+      <h1>Log in</h1>
+      <div class="labelInput">
+          <label>Email</label>
+          <input type="text" formControlName="email">
+      </div>
+      <div class="labelInput">
+          <label>Password</label>
+          <input type="text" formControlName="password">
+      </div>
+      <button>Sign up</button>
+      <div>
+          <button (click)="navToCale()"  style="margin-left: 100px; margin-top: 50px">Navigate to Full
+              calendar</button>
+      </div>
+  </form>
+</div>
